@@ -1,0 +1,68 @@
+p{
+	color:green!important;/*加入！important破坏就近原则，人为调高优先级*/
+	font-family:"Microsoft Yahei"
+}
+p{
+	color:#666;/*颜色*/
+	font-family:"Microsoft Yahei";/*设置字体，用户没有则默认*/
+	font-size:22px;/*字体大小*/
+	font-weight:bold;/*粗体*/
+	font-style:italic;/*斜体*/
+	text-decoration:underline;/*下划线*/
+	text-decoration:line-through;/*删除线*/
+	text-indent:2em;/*首行缩进*/
+	line-height:1.5em;/*行间距*/
+	letter-spacing:50px;/*字符间距*/
+	word-spacing:50px;/*单词间距*/
+	text-align:center;/*设置元素剧中，left，right*/
+}
+
+a{
+	display:block;/*内联设置为块状*/
+}
+
+div{
+	display:inline;/*块状元素设置为内联dispaly:inline:block;可以把标签设置为内联-块状元素，类似<img>标签，既不独占一行，又可以设置其他值*/
+	border-width:2px;
+	border-style:solid;/*dashed（虚线） dotted（点线） */
+	border-color:red;
+	border-bottom-color:blue;/*简写border-color:按照顺时针写四个值*/
+	padding:20px;
+}
+
+#div1{float:right;}
+#div2{float:left;}/*浮动模型使得不同的块对其方式不同*/
+/*关于继承性，p会被其的子标签继承其属性*/
+/*在相同的设置下，有优先选择最近的css属性，并且权值ID>类>标签*/
+
+/*元素分类：
+1、块状元素：<div><p><hx><ol><ul><dl><table><address><blockquote>
+2、内联元素：<a><span><br><i><em><strong><lable><q><var><cite><code>
+3、内联：内联块状元素：<img><input>
+
+块状元素的特点：
+1、一个元素独占一行，其后另占一行
+2、元素各个值可以设置
+3、元素宽度不设置，是父宽度*/
+
+/*
+三种模型：
+1、流动模型：块状元素自上而下分布，内联元素自左而右分布
+2、浮动模型：
+3、层模型：分为绝对定位（position:absolute）、相对定位（position:relative）、固定定位（position:fixed）、
+绝对定位：使用的块元素始终和父级保持绝对位置，但要使用top，left，right、bottom等属性设置，相对坐标
+相对定位：相对以前位置进行移动，而不是父标签。继续使用top等属性
+固定视图：相对于画布而定，可以实现屏幕滚动，儿标签不动
+注意：不参照浏览器时，被参照标签需用相对定位，而参照标签用绝对。
+*/
+
+/*块状元素的居中
+1、定宽：如果块状元素设置了width：200px；可以使用margin：20px,atuo;是剧中，前面的20px表示上下边距，auto指的是左右对齐
+2、不定宽：1）元素外加入<table>标签设置margin，利用了table的长度自适应属性2）display：inline，然后text-align，3）设置positive：relative和left：50%利用相对定位
+*/
+
+/*
+垂直居中：
+1、单行文本：使用height，line-height，居中，lh-fs=2*行间距
+2、多行文本、图片：使用<table> 同时设置：vertical-align：middle：
+*/

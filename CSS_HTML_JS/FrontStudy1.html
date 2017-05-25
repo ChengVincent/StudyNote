@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<!--head标签用来放置一些配置文件css，javascript等文件-->
+		<link href="FrontStudy1.css" rel="stylesheet" type="text/css" />
+		<!--链接外部css文件-->
+		<title>网页顶端的标题</title>
+	</head>
+	<body>
+	<!--body标签用来放置网页上出现的东西-->
+		<h1>This is a title</h1>
+		<img src="../test.gif" alt="下载失败时的替换文本" title = "提示文本">
+		<p>这是一段文本，在这里使用<strong>强调标签</strong></p>
+		<p>这里使用<em>斜体标签</em></p>
+		<p><span>span标签</span>用来为某段设置单独的样式</p>
+		<p>要对某句话表示引用例如<q>忽如一夜春风来</q>，用q标签即可，解释器会自己加上双引号</p>
+		<p><blockquote>blockquote标签会使引用的长文字呈现如此效果，段守留空</blockquote></p>
+		<p>br标签用来把文字分行，低版本使用br/</p><!--&nbsp;&emsp;空格的输入-->
+		<hr>
+		<p>hr标签用来添加水平横线<br><pre>
+#include<stdio.h>
+int main()
+{
+    return 0;//code标签用来实现代码显示,pre实现大段代码显示
+}</pre></p>
+		<p>
+		<div id="testDiv1">
+		<ul>
+        <li>unordered list 1</li>
+		<li>unordered list 2</li>
+        </ul>
+		</div>
+		<div id="testDiv2">
+		<ol>
+        <li>ordered list 1</li>
+		<li>ordered list 2</li>
+        </ol>
+		</div>
+		</p>
+		<p>
+		<table summary="不会显示，但是会利于搜索引擎搜索，表格摘要">
+		<caption>表格的标题</caption>
+		<tr>
+		<th>行标题</th>
+		<th>tableHead</th>
+		</tr>
+		<tr>
+		<td>表行</td>
+		<td>tableROW</td>
+		</tr>
+		<tr>
+		<td>表数据</td>
+		<td>tableData</td>
+		</tr>		
+		</table>
+		</p>
+		<p><a  href="http://baidu.com"  title="这是a标签的使用" target="_blank">这是百度网址连接Hypertext Reference</a></p>
+		<a href="mailto:yy@imooc.com?subject=观了不起的盖茨比有感&body=你好，对此评论有些想法">邮件的发送</a>
+		<form    method="post"   action="save.php">
+			<label for="username">用户名:</label>
+			<input type="text" name="username" />
+			<label for="pass">密码:</label><!--lable尾后面的按钮或文本框提供聚焦作用，pass是一个空间的id-->
+			<input type="password" name="pass" value="back" id="pass" />
+			<input type="submit" value="确定"  name="submit" />
+			<input type="reset" value="重置" name="reset" />
+			<!--type为text时候是文本输入框，password是密码输入框，name供后台程序使用，value是提示作用，默认值-->
+			<textarea  rows="5" cols="30">默认显示文本，这个是文本域，提供多行输入</textarea><br>
+			<input   type="radio"   value="值"    name="名称"   checked="checked"/>
+			<input   type="radio"   value="值"    name="名称"   />
+			<input   type="checkbox"   value="值"    name="名称"   checked="checked"/>
+			<input   type="checkbox"   value="值"    name="名称"   checked="checked"/>
+			<!--radio是单选框（单选框的name要一样，只能选一项），checkbox是复选框，checked选的是默认选项-->
+			    <label>爱好:</label>
+		  <select >
+		  <option value="看书">看书</option>
+		  <option selected="selected" value="旅游">旅游</option>
+		  <option value="运动">运动</option>
+		  <option value="购物">购物</option>
+		  </select>
+		  <!--下拉列表省空间multiple="multiple"设置在select中，在操作时候ctrl点击可多选-->
+        </form>
+	</body>
+</html>

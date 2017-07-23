@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jQueryTest</title>
+	<style type="text/css">
+	    *{
+		padding:0;
+		margin:0;
+		}
+		
+		div{
+		font-size:12px;
+		text-align:center;
+		border:solid 3px #888;
+		}
+	</style>
+	<script src="jquery.js"></script>
+    <script type="text/javascript">
+ 
+			var $div = $("div");
+			var div = $div[0];
+			//var div = $div.get(0);jQuery对象转化成DOM对象的方法
+			
+			/*
+			var div = document.getElementsByTag("div");
+			var $div = $(div);
+			var $frist = $div.frist();
+			$frist.css("color","red");//DOM转换成jQury
+			*/
+			
+			/*选择器：$("#id") $(".class") $("div") $("*")
+			子类选择器：$("parent > child")//直接后代
+			后代选择器：$("ancester child")//所有后代
+			相邻选择器：$("prev + next") //紧邻后面的next选择器
+			一般选择器：$("prev ~ next") //所有的next同级父选择器
+            */	
+            /*$('p').click(function(){
+                   //把p元素转化成jQuery的对象
+                     var $this= $(this) 
+                     $this.css('color','red')  //jqery里面用this
+					 
+		/*
+		处理属性;
+		attr()有4个表达式
+		attr(传入属性名)：获取属性的值
+		attr(属性名, 属性值)：设置属性的值
+		attr(属性名,函数值)：设置属性的函数值
+		attr(attributes)：给指定元素设置多个属性值，即：{属性名一: “属性值一” , 属性名二: “属性值二” , … … }
+		removeAttr()删除方法
+		.removeAttr( attributeName ) : 为匹配的元素集合中的每个元素中移除一个属性（attribute）
+		例子：$("input:eq(1)").attr('value')
+		
+		
+		++++++++++
+		.html(),直接用返回里面的东西，里面放字符串用于替换，放函数是用函数来替换。
+		.text(),是对文本进行操作，而html是所有元素。
+		.val(),替换元素的value值
+		.addClass增加一个类.removeClass
+		.toggleClass有这个样式就删除，没有就添加
+		.css获取style属性，或者替换style
+		++++++++++
+		
+		++++++++++
+		生成节点
+		var $body = $('body');
+         $body.on('click', function() {
+        //通过jQuery生成div元素节点
+        var div = $("<div class='right'><div class='aaron'>动态创建DIV元素节点</div></div>")
+        $body.append(div)//append后面是插入元素，appendTo后面是被插入元素。
+		prepend()与prependTo()被选节点内部前，和append相反
+		.after()和.before()分别是在搜索节点前面和后面加入兄弟节点
+		insertAfter()与insertBefore()和上一条是一对
+    })
+		++++++++++
+		
+		++++++++++
+		删除节点
+		$('.hello').empty()：删除匹配的标签里的所有代码
+		$('.hello').remove()：自己也移除
+		$("p").remove(":contains('3')")：删除找到元素中的有3的元素
+		$("div").detach()：使得节点不显示，但用apppend就又能显示，其它的不能恢复
+		$("div").clone()   //只克隆了结构，事件丢失
+		$("div").clone(true) //结构、事件与数据都克隆
+		replaceWith()和replaceAll()：替换，两者方向相反
+		wrap()：父节点包裹，可以使用函数返回值
+		$('p').unwarp();删除选中元素父节点
+		.wrapAll( function ) ：给所有的返回节点，统一加上父节点
+		wrapInner()方法：所有元素的子元素，返回包裹一个统一父类
+		++++++++++
+		
+		++++++++++
+		遍历节点
+		$("div").children(".selected"):到节点的直接子类节点中找
+		$("div").find(".selected")：查找后代节点匹配
+		parent()方法:直接父级查找
+		parents()方法：所有父级
+		closest()：从自己开始向上查找，找到一个就撒手
+		next()：集合中的所有节点紧跟兄弟节点
+		prev()：相反
+		siblings()：每个元素同辈元素
+		$('li').add(document.getElementsByTagName('p')[0])：往已有集合添加元素
+		$("li").each(function(index, element) {
+        index 索引 0,1
+        element是对应的li节点 li,li
+        this 指向的是li
+        })//循环遍历
+		++++++++++
+}) */			
+			div.style.border-color="red";
+	</script>
+</head>
+<body>
+<div>html<div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+1、数组
+int[] scores;//声明
+scores = new int[5];//赋值
+等价于 int[] scores = new int[5];
+int[] scores = { 78, 93, 97, 84, 63 }//下标从0开始
+或者 int scores[]={ 78, 93, 97, 84, 63 };  //直接赋值
+或者 int scores[] = new int[]{ 78, 93, 97, 84, 63 };
+数组名.length获取数组长度
+2、数组操作
+import java.util.Arrays
+Arrays.sort(数组名):升序排序
+Arrays.toString(数组名)：把数组转换成一个字符串
+3、for语法简化版本
+for ( int score : scores ) {
+			System.out.println(score);
+}
+遍历数组scores，score为遍历变量
+4、二位数组
+类似于一维数组
+5、方法
+定义：public void show(){}
+调用：假设item是一个类
+item item1 = new item();
+item1.show()
+TIP1:返回值只能有1个，类型要符合
+如果有参数，参数需要指定参数类型，参数也可以是数组类型等
+如果同一个类中包含了两个或两个以上方法名相同、方法参数的个数、顺序或类型不同的方法，则称为方法的重载，也可称该方法被重载了，返回值和修饰符不同不算

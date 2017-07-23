@@ -1,0 +1,30 @@
+java源自于1995年sun开发，后面由甲骨文收购
+javaSE：java的标准版本
+javaME：java的移动版本
+javaEE：java的企业版本，用于网页
+jdk:java开发工具包 > jre:java运行环境 > jvm：java虚拟机
+环境的搭建
+1、jdk下载：http://www.oracle.com/technetwork/java/javase/downloads/index.html
+2、设置环境变量
+JAVA_HOME:安装目录    C:\Program Files\Java\jdk1.8.0_141
+PATH：命令文件目录    C:\Program Files\Java\jdk1.8.0_141\bin  和后面变量隔开加;
+CLASSPATH：类文件目录
+3、测试环境
+在cmd下输入java和javac返回用法就是正常
+
+
+记事本开发java：
+1、编写.java文件
+2、javac 文件名 javac HelloWorld.java|编译文件（cmd下面），生成.class文件
+3、java 类文件名 java HelloWorld|执行  ，执行时候不要加class
+
+IDE开发：
+1、https://www.eclipse.org/downloads/，下载eclipse
+2、新建工程
+3、创建包
+src目录一般放源码，把包创建在它底下,包名一般和域名反向
+3、在包下面创建class源代码文件，后缀自动为java
+
+程序工程的导入导出
+1、在你的工作区中寻找工程
+2、file>import>general>已经存在的工作区

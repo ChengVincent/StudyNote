@@ -1,0 +1,52 @@
+1、java的语言类型
+byte(1)、short(2)、int(4)、long(8,后加L)、double(8)、float（4数字后加f）、char（用单引号，是两个字节）、boolean（true/false不能用其他数据代替）
+2、类型转换
+强类型转换，之间需要满足同种类型，且被赋值类型大的特点
+3、强制类型转换
+int a=(int)2.34f;强制类型转换可能会损失精度
+4、常量的定义
+final float PI=3.14f  需要前加final关键字，并且需要大写变量名
+5、注释
+/**  */文档注释
+/*   */多行注释
+//单行注释
+javadoc命令能够提取注释，生成API文档
+       @author 标明开发该类模块的作者
+       @version 标明该类模块的版本
+       @see 参考转向，也就是相关主题
+       @param 对方法中某参数的说明
+       @return 对方法返回值的说明
+       @exception 对方法可能抛出的异常进行说明
+用这些命令会使得文档生成更详细
+6、算数运算符
++、-、*、/、++、--、%
+7、赋值运算符
++-、-=、/=、*=、%=、=
+8、比较运算符
+==、!=、<=、>=、<、>
+9、逻辑运算符
+&&、||、！、^(注意短路效应)
+10、条件运算符
+?:
+11、if语句else语句
+if()
+{}
+else if()
+{}
+else
+{}
+12、switch语句
+switch()
+{
+case obj:somethig;break;
+default:somethig;break;
+}
+13、while语句
+while()
+{}
+14、do while语句
+do{}while();
+15、for语句
+for(,,){}
+16、break、continue语句（同c）
+17、print和println，println会换行，print不会
